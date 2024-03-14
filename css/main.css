@@ -1,0 +1,263 @@
+/* https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png */
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(19, 25, 33);
+    height: 60px;
+    color: white;
+}
+
+.container {
+    width: 99%;
+    height: 100%;
+    margin: auto;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    height: 50px;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+}
+
+
+.logo {
+    width: 120px;
+    height: 50px;
+    background: url('https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png');
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+    overflow: hidden;
+}
+
+.border-with:hover {
+    border: 2px solid transparent;
+}
+
+.border-with:hover {
+    /* padding: 5px; */
+    border: 1.5px solid white;
+}
+
+.adress-container {
+    margin-left: 5px;
+    padding: 8px;
+}
+
+.adress-container p {
+    margin: 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.dilver-text {
+    font-size: 0.8rem;
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.icon-location {
+    margin-right: 7px;
+}
+
+.serch-container {
+    margin-left: 25px;
+    width: 640px;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.serch-container:hover {
+    outline: 3px solid orange;
+}
+
+.search-select {
+    width: 60px;
+    border: none;
+    background: rgb(230, 227, 227);
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 3px;
+    font-size: 1.1rem;
+}
+
+.serch-icon {
+    width: 40px;
+    background-color: rgb(235, 160, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.img-upload {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.language-container {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.language-container p {
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.image-flag {
+    width: 20px;
+}
+
+.image-flag img {
+    width: 100%;
+}
+.language-selsect{
+    background: transparent;
+    color: #ccc;
+    border: none;
+    margin-top: 10px;
+    margin-left:-10px;
+}
+.login-singup-container{
+margin-left: 18px;
+margin-right: 30px;
+padding: 8px;
+}
+
+.login-singup-container p{
+    margin: 0;
+}
+
+.accaunt{
+    font-weight: 900;
+}
+
+.return-container{
+width: 61px;
+font-size:0.9rem ;
+margin-left: 10px; 
+}
+.return-container p{
+    margin: 0;
+}
+
+.Order{
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    width: 70px;
+}
+
+.cart-container{
+    font-size: 1.1rem;
+    margin-left: 30px;
+    display: flex;
+}
+.cart-container i{
+    font-size: 1.7rem;
+}
+
+.Main-section{
+    background-color: #02232de7;
+    color: white;
+    font-size: 1rem;
+}
+
+.head-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+.Hamburger-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* //////////////////js  code*/
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background: darkblue;
+    display: none;
+}
+
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    top: 0;
+    left: -300px;
+    transition: .5s;
+    z-index: 101;
+}
+
+.sidebar.show{
+    left: 0;
+}
+
+.Wraper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.Btn-done{
+  margin-left:60px ;
+  margin-top:20px ;
+}
+.btn-close{
+    right: 0;
+}
+
+.Mini-header{
+    background-color:  #02232de7;
+    display: flex;
+    align-items: center;
+    gap: 30px   ;
+}
+
+.Mini-header-pText{
+    margin-left: 15px;
+}
